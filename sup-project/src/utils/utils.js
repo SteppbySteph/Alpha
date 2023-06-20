@@ -1,5 +1,5 @@
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://sup-frontend-u8ga.onrender.com'
 // https://final-project-sup.onrender.com
 // https://sup-api-js.herokuapp.com
 
