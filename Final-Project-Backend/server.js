@@ -17,7 +17,13 @@ mongoose.Promise = Promise
 
 
 const port = process.env.PORT || 8080
+const corsOptions = {
+  origin: "https://sup-frontend-u8ga.onrender.com"
+}
+
 const app = express()
+app.use(cors(corsOptions))
+
 
 ///////////////////////Middlewares/////////////////////
 app.use(cors())
