@@ -17,15 +17,12 @@ mongoose.Promise = Promise
 
 
 const port = process.env.PORT || 8080
-const corsOptions = {
-  origin: "https://sup-frontend-u8ga.onrender.com"
-}
 
 const app = express()
-app.use(cors(corsOptions))
 
 
 ///////////////////////Middlewares/////////////////////
+// app.use(cors(corsOptions))
 app.use(cors())
 app.use(express.json())
 
@@ -193,7 +190,7 @@ app.post("/login", async (req, res) => {
     }
   } catch (error) {
     res.status(400).json({
-      response: error,
+      response: "error",
       success: false
     })
   }
